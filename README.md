@@ -1,4 +1,4 @@
-# ☕ Coffee – Wake Streamlit App with GitHub Actions + Selenium
+# Wake Streamlit App with GitHub Actions + Selenium
 
 This repository contains a simple automation setup that uses **GitHub Actions** and **Selenium** to keep a [Streamlit Community Cloud](https://streamlit.io/cloud) app awake.
 
@@ -9,7 +9,7 @@ Streamlit Community apps automatically go to sleep after inactivity. This projec
 ## 📂 Project Structure
 
 ```
-Coffee/
+wake-streamlit/
 │── main.py                 # Selenium script to wake up the Streamlit app
 │── requirements.txt        # Python dependencies
 │── .github/
@@ -38,7 +38,7 @@ Coffee/
 ### 1. Fork or Clone
 
 ```bash
-git clone https://github.com/Virgo-Alpha/Coffee.git
+git clone https://github.com/alicekwn/wake-streamlit.git
 cd Coffee
 ```
 
@@ -47,7 +47,7 @@ cd Coffee
 By default, the script points to:
 
 ```python
-STREAMLIT_URL = "https://benson-mugure-portfolio.streamlit.app/"
+STREAMLIT_URL = "https://qlearning-demo.streamlit.app/"
 ```
 
 You can override this by setting an environment variable in your workflow:
@@ -56,7 +56,7 @@ You can override this by setting an environment variable in your workflow:
 - name: Run Selenium script
   run: python main.py
   env:
-    STREAMLIT_APP_URL: "https://your-streamlit-app.streamlit.app/"
+    STREAMLIT_APP_URL: "https://qlearning-demo.streamlit.app/"
 ```
 
 ---
