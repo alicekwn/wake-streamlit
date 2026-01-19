@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import TimeoutException
-import os
 
 # Streamlit app URL from environment variable (or default)
 STREAMLIT_URL = "https://qlearning-demo.streamlit.app/"
